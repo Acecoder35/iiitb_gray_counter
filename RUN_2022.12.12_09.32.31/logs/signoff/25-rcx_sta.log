@@ -1,0 +1,129 @@
+OpenROAD 7c85c140308f01b73f57ea1117f3e43f39abd437 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[WARNING STA-0163] /openlane/designs/iiitb_gray_cntr/src/sky130_fd_sc_hd__typical.lib line 23, default_fanout_load is 0.0.
+[WARNING STA-0357] virtual clock clkin can not be propagated.
+min_report
+
+===========================================================================
+report_checks -path_delay min (Hold)
+============================================================================
+No paths found.
+min_report_end
+max_report
+
+===========================================================================
+report_checks -path_delay max (Setup)
+============================================================================
+No paths found.
+max_report_end
+check_report
+
+===========================================================================
+report_checks -unconstrained
+============================================================================
+Startpoint: rst (input port clocked by clkin)
+Endpoint: _36_ (rising edge-triggered flip-flop)
+Path Group: (none)
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          2.00    2.00 v input external delay
+                  0.01    0.00    2.00 v rst (in)
+     1    0.00                           rst (net)
+                  0.01    0.00    2.00 v input2/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.09    0.15    2.15 v input2/X (sky130_fd_sc_hd__clkbuf_2)
+     7    0.02                           net2 (net)
+                  0.09    0.00    2.15 v _23_/B1_N (sky130_fd_sc_hd__o21ba_1)
+                  0.04    0.23    2.39 ^ _23_/X (sky130_fd_sc_hd__o21ba_1)
+     1    0.00                           _11_ (net)
+                  0.04    0.00    2.39 ^ _24_/B1_N (sky130_fd_sc_hd__a21boi_1)
+                  0.10    0.14    2.53 ^ _24_/Y (sky130_fd_sc_hd__a21boi_1)
+     1    0.00                           _02_ (net)
+                  0.10    0.00    2.53 ^ _36_/D (sky130_fd_sc_hd__dfxtp_1)
+                                  2.53   data arrival time
+-----------------------------------------------------------------------------
+(Path is unconstrained)
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+No paths found.
+check_report_end
+check_slew
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 0
+max cap violation count 0
+============================================================================
+check_slew_end
+tns_report
+
+===========================================================================
+ report_tns
+============================================================================
+tns 0.00
+tns_report_end
+wns_report
+
+===========================================================================
+ report_wns
+============================================================================
+wns 0.00
+wns_report_end
+worst_slack
+
+===========================================================================
+ report_worst_slack -max (Setup)
+============================================================================
+worst slack INF
+
+===========================================================================
+ report_worst_slack -min (Hold)
+============================================================================
+worst slack INF
+worst_slack_end
+clock_skew
+
+===========================================================================
+ report_clock_skew
+============================================================================
+Clock clkin
+No launch/capture paths found.
+
+clock_skew_end
+power_report
+
+===========================================================================
+ report_power
+============================================================================
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             3.54e-06   2.24e-06   5.91e-11   5.78e-06  59.5%
+Combinational          2.31e-06   1.63e-06   2.95e-10   3.94e-06  40.5%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  5.85e-06   3.87e-06   3.54e-10   9.72e-06 100.0%
+                          60.2%      39.8%       0.0%
+power_report_end
+area_report
+
+===========================================================================
+ report_design_area
+============================================================================
+Design area 315 u^2 24% utilization.
+area_report_end
+Setting global connections for newly added cells...
+[WARNING] Did not save OpenROAD database!
+Writing SDF to /openlane/designs/iiitb_gray_cntr/runs/RUN_2022.12.12_09.32.31/results/routing/mca/process_corner_nom/iiitb_gray_cntr.sdf...
+Writing timing model to /openlane/designs/iiitb_gray_cntr/runs/RUN_2022.12.12_09.32.31/results/routing/mca/process_corner_nom/iiitb_gray_cntr.lib...

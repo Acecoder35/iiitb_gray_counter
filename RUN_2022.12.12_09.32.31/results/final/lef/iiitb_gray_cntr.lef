@@ -1,0 +1,188 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO iiitb_gray_cntr
+  CLASS BLOCK ;
+  FOREIGN iiitb_gray_cntr ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 48.890 BY 59.610 ;
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 12.735 10.640 14.335 46.480 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 22.165 10.640 23.765 46.480 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 31.595 10.640 33.195 46.480 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 41.025 10.640 42.625 46.480 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 17.800 43.480 19.400 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 26.640 43.480 28.240 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 35.480 43.480 37.080 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 44.320 43.480 45.920 ;
+    END
+  END VGND
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 9.435 10.640 11.035 46.480 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 18.865 10.640 20.465 46.480 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 28.295 10.640 29.895 46.480 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 37.725 10.640 39.325 46.480 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 14.500 43.480 16.100 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 23.340 43.480 24.940 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 32.180 43.480 33.780 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 41.020 43.480 42.620 ;
+    END
+  END VPWR
+  PIN bcd_value[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 48.390 55.610 48.670 59.610 ;
+    END
+  END bcd_value[0]
+  PIN bcd_value[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0.090 0.000 0.370 4.000 ;
+    END
+  END bcd_value[1]
+  PIN bcd_value[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 29.070 55.610 29.350 59.610 ;
+    END
+  END bcd_value[2]
+  PIN bcd_value[3]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 41.950 0.000 42.230 4.000 ;
+    END
+  END bcd_value[3]
+  PIN clk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 20.440 4.000 21.040 ;
+    END
+  END clk
+  PIN gray_count[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 44.890 37.440 48.890 38.040 ;
+    END
+  END gray_count[0]
+  PIN gray_count[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 19.410 0.000 19.690 4.000 ;
+    END
+  END gray_count[1]
+  PIN gray_count[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 44.240 4.000 44.840 ;
+    END
+  END gray_count[2]
+  PIN gray_count[3]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 6.530 55.610 6.810 59.610 ;
+    END
+  END gray_count[3]
+  PIN rst
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 44.890 13.640 48.890 14.240 ;
+    END
+  END rst
+  OBS
+      LAYER li1 ;
+        RECT 5.520 10.795 43.240 46.325 ;
+      LAYER met1 ;
+        RECT 0.070 10.640 47.310 46.480 ;
+      LAYER met2 ;
+        RECT 0.100 55.330 6.250 56.170 ;
+        RECT 7.090 55.330 28.790 56.170 ;
+        RECT 29.630 55.330 48.110 56.170 ;
+        RECT 0.100 4.280 48.390 55.330 ;
+        RECT 0.650 4.000 19.130 4.280 ;
+        RECT 19.970 4.000 41.670 4.280 ;
+        RECT 42.510 4.000 48.390 4.280 ;
+      LAYER met3 ;
+        RECT 4.000 45.240 44.890 46.405 ;
+        RECT 4.400 43.840 44.890 45.240 ;
+        RECT 4.000 38.440 44.890 43.840 ;
+        RECT 4.000 37.040 44.490 38.440 ;
+        RECT 4.000 21.440 44.890 37.040 ;
+        RECT 4.400 20.040 44.890 21.440 ;
+        RECT 4.000 14.640 44.890 20.040 ;
+        RECT 4.000 13.240 44.490 14.640 ;
+        RECT 4.000 10.715 44.890 13.240 ;
+  END
+END iiitb_gray_cntr
+END LIBRARY
+

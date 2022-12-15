@@ -1,0 +1,218 @@
+OpenROAD 7c85c140308f01b73f57ea1117f3e43f39abd437 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[WARNING STA-0163] /openlane/designs/iiitb_gray_cntr/src/sky130_fd_sc_hd__typical.lib line 23, default_fanout_load is 0.0.
+[INFO]: Setting RC values...
+[INFO]: Setting signal min routing layer to: met1 and clock min routing layer to met1. 
+[INFO]: Setting signal max routing layer to: met5 and clock max routing layer to met5. 
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: 460 2720
+[INFO GPL-0004] CoreAreaLxLy: 5520 10880
+[INFO GPL-0005] CoreAreaUxUy: 43240 46240
+[INFO GPL-0006] NumInstances: 66
+[INFO GPL-0007] NumPlaceInstances: 25
+[INFO GPL-0008] NumFixedInstances: 41
+[INFO GPL-0009] NumDummyInstances: 0
+[INFO GPL-0010] NumNets: 27
+[INFO GPL-0011] NumPins: 93
+[INFO GPL-0012] DieAreaLxLy: 0 0
+[INFO GPL-0013] DieAreaUxUy: 48890 59610
+[INFO GPL-0014] CoreAreaLxLy: 5520 10880
+[INFO GPL-0015] CoreAreaUxUy: 43240 46240
+[INFO GPL-0016] CoreArea: 1333779200
+[INFO GPL-0017] NonPlaceInstsArea: 116361600
+[INFO GPL-0018] PlaceInstsArea: 286524800
+[INFO GPL-0019] Util(%): 23.54
+[INFO GPL-0020] StdInstsArea: 286524800
+[INFO GPL-0021] MacroInstsArea: 0
+[InitialPlace]  Iter: 1 CG residual: 0.00000006 HPWL: 712460
+[InitialPlace]  Iter: 2 CG residual: 0.00000009 HPWL: 611785
+[InitialPlace]  Iter: 3 CG residual: 0.00000005 HPWL: 609949
+[InitialPlace]  Iter: 4 CG residual: 0.00000007 HPWL: 611901
+[InitialPlace]  Iter: 5 CG residual: 0.00000003 HPWL: 610056
+[INFO GPL-0031] FillerInit: NumGCells: 76
+[INFO GPL-0032] FillerInit: NumGNets: 27
+[INFO GPL-0033] FillerInit: NumGPins: 93
+[INFO GPL-0023] TargetDensity: 0.70
+[INFO GPL-0024] AveragePlaceInstArea: 11460992
+[INFO GPL-0025] IdealBinArea: 16372846
+[INFO GPL-0026] IdealBinCnt: 81
+[INFO GPL-0027] TotalBinArea: 1333779200
+[INFO GPL-0028] BinCnt: 8 8
+[INFO GPL-0029] BinSize: 4715 4420
+[INFO GPL-0030] NumBins: 64
+[NesterovSolve] Iter: 1 overflow: 0.455394 HPWL: 458933
+[INFO GPL-0100] worst slack 1e+30
+[WARNING GPL-0102] No slacks found. Timing-driven mode disabled.
+[NesterovSolve] Snapshot saved at iter = 0
+[NesterovSolve] Iter: 10 overflow: 0.40332 HPWL: 459504
+[NesterovSolve] Iter: 20 overflow: 0.409209 HPWL: 459974
+[NesterovSolve] Iter: 30 overflow: 0.404441 HPWL: 459505
+[NesterovSolve] Iter: 40 overflow: 0.406938 HPWL: 459800
+[NesterovSolve] Iter: 50 overflow: 0.407605 HPWL: 459899
+[NesterovSolve] Iter: 60 overflow: 0.406805 HPWL: 459788
+[NesterovSolve] Iter: 70 overflow: 0.406566 HPWL: 459764
+[NesterovSolve] Iter: 80 overflow: 0.406971 HPWL: 459831
+[NesterovSolve] Iter: 90 overflow: 0.406931 HPWL: 459854
+[NesterovSolve] Iter: 100 overflow: 0.406629 HPWL: 459840
+[NesterovSolve] Iter: 110 overflow: 0.406528 HPWL: 459877
+[NesterovSolve] Iter: 120 overflow: 0.406384 HPWL: 459939
+[NesterovSolve] Iter: 130 overflow: 0.405811 HPWL: 460233
+[NesterovSolve] Iter: 140 overflow: 0.404268 HPWL: 460220
+[NesterovSolve] Iter: 150 overflow: 0.401838 HPWL: 459987
+[NesterovSolve] Iter: 160 overflow: 0.398741 HPWL: 460077
+[NesterovSolve] Iter: 170 overflow: 0.393829 HPWL: 460181
+[NesterovSolve] Iter: 180 overflow: 0.385334 HPWL: 460249
+[NesterovSolve] Iter: 190 overflow: 0.368645 HPWL: 459456
+[NesterovSolve] Iter: 200 overflow: 0.340967 HPWL: 456992
+[NesterovSolve] Iter: 210 overflow: 0.309108 HPWL: 453986
+[NesterovSolve] Iter: 220 overflow: 0.280243 HPWL: 452474
+[NesterovSolve] Iter: 230 overflow: 0.250944 HPWL: 451931
+[NesterovSolve] Iter: 240 overflow: 0.221728 HPWL: 452615
+[INFO GPL-0075] Routability numCall: 1 inflationIterCnt: 1 bloatIterCnt: 0
+[INFO GPL-0036] TileLxLy: 0 0
+[INFO GPL-0037] TileSize: 6900 6900
+[INFO GPL-0038] TileCnt: 7 8
+[INFO GPL-0039] numRoutingLayers: 6
+[INFO GPL-0040] NumTiles: 56
+[INFO GPL-0063] TotalRouteOverflowH2: 0.0
+[INFO GPL-0064] TotalRouteOverflowV2: 0.0
+[INFO GPL-0065] OverflowTileCnt2: 0
+[INFO GPL-0066] 0.5%RC: 0.949999988079071
+[INFO GPL-0067] 1.0%RC: 0.824999988079071
+[INFO GPL-0068] 2.0%RC: 0.7666666507720947
+[INFO GPL-0069] 5.0%RC: 0.6666666865348816
+[INFO GPL-0070] 0.5rcK: 1.0
+[INFO GPL-0071] 1.0rcK: 1.0
+[INFO GPL-0072] 2.0rcK: 0.0
+[INFO GPL-0073] 5.0rcK: 0.0
+[INFO GPL-0074] FinalRC: 0.8875
+[NesterovSolve] Iter: 250 overflow: 0.194535 HPWL: 453392
+[NesterovSolve] Iter: 260 overflow: 0.17291 HPWL: 453620
+[NesterovSolve] Iter: 270 overflow: 0.14566 HPWL: 453493
+[NesterovSolve] Iter: 280 overflow: 0.117585 HPWL: 452167
+[NesterovSolve] Finished with Overflow: 0.098950
+Setting global connections for newly added cells...
+Writing OpenROAD database to /openlane/designs/iiitb_gray_cntr/runs/RUN_2022.12.12_09.32.31/tmp/placement/7-global.odb...
+Writing layout to /openlane/designs/iiitb_gray_cntr/runs/RUN_2022.12.12_09.32.31/tmp/placement/7-global.def...
+[INFO]: Setting RC values...
+min_report
+
+===========================================================================
+report_checks -path_delay min (Hold)
+============================================================================
+No paths found.
+min_report_end
+max_report
+
+===========================================================================
+report_checks -path_delay max (Setup)
+============================================================================
+No paths found.
+max_report_end
+check_report
+
+===========================================================================
+report_checks -unconstrained
+============================================================================
+Startpoint: rst (input port clocked by clkin)
+Endpoint: _36_ (rising edge-triggered flip-flop)
+Path Group: (none)
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          2.00    2.00 ^ input external delay
+                  0.15    0.11    2.11 ^ rst (in)
+     7    0.03                           rst (net)
+                  0.15    0.00    2.11 ^ _23_/B1_N (sky130_fd_sc_hd__o21ba_2)
+                  0.03    0.18    2.29 v _23_/X (sky130_fd_sc_hd__o21ba_2)
+     1    0.00                           _11_ (net)
+                  0.03    0.00    2.29 v _24_/B1_N (sky130_fd_sc_hd__a21boi_2)
+                  0.07    0.15    2.44 v _24_/Y (sky130_fd_sc_hd__a21boi_2)
+     1    0.00                           _02_ (net)
+                  0.07    0.00    2.44 v _36_/D (sky130_fd_sc_hd__dfxtp_2)
+                                  2.44   data arrival time
+-----------------------------------------------------------------------------
+(Path is unconstrained)
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+No paths found.
+check_report_end
+check_slew
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 0
+max cap violation count 0
+============================================================================
+check_slew_end
+tns_report
+
+===========================================================================
+ report_tns
+============================================================================
+tns 0.00
+tns_report_end
+wns_report
+
+===========================================================================
+ report_wns
+============================================================================
+wns 0.00
+wns_report_end
+worst_slack
+
+===========================================================================
+ report_worst_slack -max (Setup)
+============================================================================
+worst slack INF
+
+===========================================================================
+ report_worst_slack -min (Hold)
+============================================================================
+worst slack INF
+worst_slack_end
+clock_skew
+
+===========================================================================
+ report_clock_skew
+============================================================================
+Clock clkin
+No launch/capture paths found.
+
+clock_skew_end
+power_report
+
+===========================================================================
+ report_power
+============================================================================
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             3.96e-06   6.55e-06   5.91e-11   1.05e-05  74.4%
+Combinational          2.86e-06   7.55e-07   1.36e-10   3.61e-06  25.6%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  6.82e-06   7.30e-06   1.95e-10   1.41e-05 100.0%
+                          48.3%      51.7%       0.0%
+power_report_end
+area_report
+
+===========================================================================
+ report_design_area
+============================================================================
+Design area 305 u^2 23% utilization.
+area_report_end
+Setting global connections for newly added cells...
+Writing OpenROAD database to /openlane/designs/iiitb_gray_cntr/runs/RUN_2022.12.12_09.32.31/tmp/placement/7-global.odb...
+Writing layout to /openlane/designs/iiitb_gray_cntr/runs/RUN_2022.12.12_09.32.31/tmp/placement/7-global.def...

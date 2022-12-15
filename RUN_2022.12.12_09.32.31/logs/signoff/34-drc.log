@@ -1,0 +1,52 @@
+
+Magic 8.3 revision 348 - Compiled on Thu Dec  1 21:33:59 UTC 2022.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Using technology "sky130A", version 1.0.368-0-gb8c6129
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 3.0
+Library name: iiitb_gray_cntr
+Reading "sky130_fd_sc_hd__fill_2".
+Reading "sky130_ef_sc_hd__decap_12".
+Reading "sky130_fd_sc_hd__decap_3".
+Reading "sky130_fd_sc_hd__buf_2".
+Reading "sky130_fd_sc_hd__decap_6".
+Reading "sky130_fd_sc_hd__fill_1".
+Reading "sky130_fd_sc_hd__tapvpwrvgnd_1".
+Reading "sky130_fd_sc_hd__decap_8".
+Reading "sky130_fd_sc_hd__decap_4".
+Reading "sky130_fd_sc_hd__clkbuf_2".
+Reading "sky130_fd_sc_hd__dfxtp_1".
+Reading "sky130_fd_sc_hd__clkbuf_1".
+Reading "sky130_fd_sc_hd__dfxtp_2".
+Reading "sky130_fd_sc_hd__nor2_1".
+Reading "sky130_fd_sc_hd__or3_1".
+Reading "sky130_fd_sc_hd__and3b_1".
+Reading "sky130_fd_sc_hd__a21oi_1".
+Reading "sky130_fd_sc_hd__o21a_1".
+Reading "sky130_fd_sc_hd__o21ai_1".
+Reading "sky130_fd_sc_hd__a21o_1".
+Reading "sky130_fd_sc_hd__and2_1".
+Reading "sky130_fd_sc_hd__and3_1".
+Reading "sky130_fd_sc_hd__o21ba_1".
+Reading "sky130_fd_sc_hd__a21boi_1".
+Reading "iiitb_gray_cntr".
+[INFO]: Loading iiitb_gray_cntr
+
+DRC style is now "drc(full)"
+Loading DRC CIF style.
+No errors found.
+[INFO]: COUNT: 0
+[INFO]: Should be divided by 3 or 4
+[INFO]: DRC Checking DONE (/openlane/designs/iiitb_gray_cntr/runs/RUN_2022.12.12_09.32.31/reports/signoff/drc.rpt)
+[INFO]: Saving mag view with DRC errors (/openlane/designs/iiitb_gray_cntr/runs/RUN_2022.12.12_09.32.31/results/signoff/iiitb_gray_cntr.drc.mag)
+[INFO]: Saved

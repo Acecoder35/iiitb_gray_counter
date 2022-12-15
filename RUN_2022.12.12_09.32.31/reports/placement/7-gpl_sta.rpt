@@ -1,0 +1,31 @@
+
+===========================================================================
+report_checks -unconstrained
+============================================================================
+Startpoint: rst (input port clocked by clkin)
+Endpoint: _36_ (rising edge-triggered flip-flop)
+Path Group: (none)
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          2.00    2.00 ^ input external delay
+                  0.15    0.11    2.11 ^ rst (in)
+     7    0.03                           rst (net)
+                  0.15    0.00    2.11 ^ _23_/B1_N (sky130_fd_sc_hd__o21ba_2)
+                  0.03    0.18    2.29 v _23_/X (sky130_fd_sc_hd__o21ba_2)
+     1    0.00                           _11_ (net)
+                  0.03    0.00    2.29 v _24_/B1_N (sky130_fd_sc_hd__a21boi_2)
+                  0.07    0.15    2.44 v _24_/Y (sky130_fd_sc_hd__a21boi_2)
+     1    0.00                           _02_ (net)
+                  0.07    0.00    2.44 v _36_/D (sky130_fd_sc_hd__dfxtp_2)
+                                  2.44   data arrival time
+-----------------------------------------------------------------------------
+(Path is unconstrained)
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+No paths found.

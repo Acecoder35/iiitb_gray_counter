@@ -1,0 +1,6 @@
+<< properties >>
+string FIXED_BBOX 0 0 9778 11922
+string GDS_END 258524
+string GDS_FILE /openlane/designs/iiitb_gray_cntr/runs/RUN_2022.12.12_09.32.31/results/signoff/iiitb_gray_cntr.magic.gds
+string GDS_START 118870
+<< end >>

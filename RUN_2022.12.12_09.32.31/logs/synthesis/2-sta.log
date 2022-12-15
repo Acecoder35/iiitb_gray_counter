@@ -1,0 +1,142 @@
+OpenROAD 7c85c140308f01b73f57ea1117f3e43f39abd437 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[WARNING STA-0163] /openlane/designs/iiitb_gray_cntr/src/sky130_fd_sc_hd__typical.lib line 23, default_fanout_load is 0.0.
+[INFO ODB-0222] Reading LEF file: /openlane/designs/iiitb_gray_cntr/runs/RUN_2022.12.12_09.32.31/tmp/merged.nom.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /openlane/designs/iiitb_gray_cntr/runs/RUN_2022.12.12_09.32.31/tmp/merged.nom.lef at line 68342.
+
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 441 library cells
+[INFO ODB-0226] Finished LEF file:  /openlane/designs/iiitb_gray_cntr/runs/RUN_2022.12.12_09.32.31/tmp/merged.nom.lef
+Reading netlist...
+[WARNING STA-0337] port 'clkin' not found.
+[INFO]: Setting output delay to: 2.0
+[INFO]: Setting input delay to: 2.0
+[WARNING STA-0337] port 'clkin' not found.
+[INFO]: Setting load to: 0.033442
+[INFO]: Setting clock uncertainty to: 0.25
+[INFO]: Setting clock transition to: 0.15
+[WARNING STA-0559] transition time can not be specified for virtual clocks.
+[INFO]: Setting timing derate to: 0.5 %
+min_report
+
+===========================================================================
+report_checks -path_delay min (Hold)
+============================================================================
+No paths found.
+min_report_end
+max_report
+
+===========================================================================
+report_checks -path_delay max (Setup)
+============================================================================
+No paths found.
+max_report_end
+check_report
+
+===========================================================================
+report_checks -unconstrained
+============================================================================
+Startpoint: rst (input port clocked by clkin)
+Endpoint: _36_ (rising edge-triggered flip-flop)
+Path Group: (none)
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          2.00    2.00 ^ input external delay
+                  0.13    0.09    2.09 ^ rst (in)
+     7    0.03                           rst (net)
+                  0.13    0.00    2.09 ^ _23_/B1_N (sky130_fd_sc_hd__o21ba_2)
+                  0.03    0.18    2.26 v _23_/X (sky130_fd_sc_hd__o21ba_2)
+     1    0.00                           _11_ (net)
+                  0.03    0.00    2.26 v _24_/B1_N (sky130_fd_sc_hd__a21boi_2)
+                  0.06    0.14    2.41 v _24_/Y (sky130_fd_sc_hd__a21boi_2)
+     1    0.00                           _02_ (net)
+                  0.06    0.00    2.41 v _36_/D (sky130_fd_sc_hd__dfxtp_2)
+                                  2.41   data arrival time
+-----------------------------------------------------------------------------
+(Path is unconstrained)
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+No paths found.
+check_report_end
+check_slew
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 0
+max cap violation count 0
+============================================================================
+check_slew_end
+tns_report
+
+===========================================================================
+ report_tns
+============================================================================
+tns 0.00
+tns_report_end
+wns_report
+
+===========================================================================
+ report_wns
+============================================================================
+wns 0.00
+wns_report_end
+worst_slack
+
+===========================================================================
+ report_worst_slack -max (Setup)
+============================================================================
+worst slack INF
+
+===========================================================================
+ report_worst_slack -min (Hold)
+============================================================================
+worst slack INF
+worst_slack_end
+clock_skew
+
+===========================================================================
+ report_clock_skew
+============================================================================
+Clock clkin
+No launch/capture paths found.
+
+clock_skew_end
+power_report
+
+===========================================================================
+ report_power
+============================================================================
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             3.96e-06   6.56e-06   5.91e-11   1.05e-05  75.0%
+Combinational          2.85e-06   6.49e-07   5.16e-11   3.50e-06  25.0%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  6.81e-06   7.20e-06   1.11e-10   1.40e-05 100.0%
+                          48.6%      51.4%       0.0%
+power_report_end
+area_report
+
+===========================================================================
+ report_design_area
+============================================================================
+Design area 287 u^2 100% utilization.
+area_report_end
+[WARNING] Did not save OpenROAD database!
+Writing SDF to /openlane/designs/iiitb_gray_cntr/runs/RUN_2022.12.12_09.32.31/results/synthesis/iiitb_gray_cntr.sdf...

@@ -1,0 +1,204 @@
+OpenROAD 7c85c140308f01b73f57ea1117f3e43f39abd437 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[WARNING STA-0163] /openlane/designs/iiitb_gray_cntr/runs/RUN_2022.12.12_09.32.31/tmp/synthesis/resizer_sky130_fd_sc_hd__typical.lib line 23, default_fanout_load is 0.0.
+[WARNING STA-0357] virtual clock clkin can not be propagated.
+[INFO]: Setting signal min routing layer to: met1 and clock min routing layer to met1. 
+[INFO]: Setting signal max routing layer to: met5 and clock max routing layer to met5. 
+-congestion_iterations 50 -verbose
+[INFO GRT-0020] Min routing layer: met1
+[INFO GRT-0021] Max routing layer: met5
+[INFO GRT-0022] Global adjustment: 30%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0088] Layer li1     Track-Pitch = 0.4600  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met1    Track-Pitch = 0.3400  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met2    Track-Pitch = 0.4600  line-2-Via Pitch: 0.3500
+[INFO GRT-0088] Layer met3    Track-Pitch = 0.6800  line-2-Via Pitch: 0.6150
+[INFO GRT-0088] Layer met4    Track-Pitch = 0.9200  line-2-Via Pitch: 1.0400
+[INFO GRT-0088] Layer met5    Track-Pitch = 3.4000  line-2-Via Pitch: 3.1100
+[INFO GRT-0019] Found 0 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 9
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0004] Blockages: 98
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+li1        Vertical            0             0          0.00%
+met1       Horizontal       1120           690          38.39%
+met2       Vertical          840           518          38.33%
+met3       Horizontal        560           378          32.50%
+met4       Vertical          336           184          45.24%
+met5       Horizontal        112            54          51.79%
+---------------------------------------------------------------
+
+[INFO GRT-0197] Via related to pin nodes: 130
+[INFO GRT-0198] Via related Steiner nodes: 1
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 140
+[INFO GRT-0112] Final usage 3D: 491
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+li1                  0             0            0.00%             0 /  0 /  0
+met1               690            35            5.07%             0 /  0 /  0
+met2               518            36            6.95%             0 /  0 /  0
+met3               378             0            0.00%             0 /  0 /  0
+met4               184             0            0.00%             0 /  0 /  0
+met5                54             0            0.00%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total             1824            71            3.89%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 1145 um
+[INFO GRT-0014] Routed nets: 37
+[INFO]: Setting RC values...
+[INFO RSZ-0033] No hold violations found.
+Placement Analysis
+---------------------------------
+total displacement          0.0 u
+average displacement        0.0 u
+max displacement            0.0 u
+original HPWL             525.1 u
+legalized HPWL            553.4 u
+delta HPWL                    5 %
+
+[INFO DPL-0020] Mirrored 12 instances
+[INFO DPL-0021] HPWL before             553.4 u
+[INFO DPL-0022] HPWL after              525.1 u
+[INFO DPL-0023] HPWL delta               -5.1 %
+Setting global connections for newly added cells...
+Writing OpenROAD database to /openlane/designs/iiitb_gray_cntr/runs/RUN_2022.12.12_09.32.31/tmp/12-iiitb_gray_cntr.odb...
+Writing netlist to /openlane/designs/iiitb_gray_cntr/runs/RUN_2022.12.12_09.32.31/tmp/12-iiitb_gray_cntr.nl.v...
+Writing powered netlist to /openlane/designs/iiitb_gray_cntr/runs/RUN_2022.12.12_09.32.31/tmp/12-iiitb_gray_cntr.pnl.v...
+Writing layout to /openlane/designs/iiitb_gray_cntr/runs/RUN_2022.12.12_09.32.31/tmp/12-iiitb_gray_cntr.def...
+Writing timing constraints to /openlane/designs/iiitb_gray_cntr/runs/RUN_2022.12.12_09.32.31/tmp/12-iiitb_gray_cntr.sdc...
+min_report
+
+===========================================================================
+report_checks -path_delay min (Hold)
+============================================================================
+No paths found.
+min_report_end
+max_report
+
+===========================================================================
+report_checks -path_delay max (Setup)
+============================================================================
+No paths found.
+max_report_end
+check_report
+
+===========================================================================
+report_checks -unconstrained
+============================================================================
+Startpoint: rst (input port clocked by clkin)
+Endpoint: _36_ (rising edge-triggered flip-flop)
+Path Group: (none)
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          2.00    2.00 v input external delay
+                  0.01    0.01    2.01 v rst (in)
+     1    0.00                           rst (net)
+                  0.01    0.00    2.01 v input2/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.08    0.14    2.15 v input2/X (sky130_fd_sc_hd__clkbuf_2)
+     7    0.02                           net2 (net)
+                  0.08    0.00    2.15 v _23_/B1_N (sky130_fd_sc_hd__o21ba_1)
+                  0.04    0.23    2.38 ^ _23_/X (sky130_fd_sc_hd__o21ba_1)
+     1    0.00                           _11_ (net)
+                  0.04    0.00    2.38 ^ _24_/B1_N (sky130_fd_sc_hd__a21boi_1)
+                  0.12    0.16    2.54 ^ _24_/Y (sky130_fd_sc_hd__a21boi_1)
+     1    0.00                           _02_ (net)
+                  0.12    0.00    2.54 ^ _36_/D (sky130_fd_sc_hd__dfxtp_1)
+                                  2.54   data arrival time
+-----------------------------------------------------------------------------
+(Path is unconstrained)
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+No paths found.
+check_report_end
+check_slew
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 0
+max cap violation count 0
+============================================================================
+check_slew_end
+tns_report
+
+===========================================================================
+ report_tns
+============================================================================
+tns 0.00
+tns_report_end
+wns_report
+
+===========================================================================
+ report_wns
+============================================================================
+wns 0.00
+wns_report_end
+worst_slack
+
+===========================================================================
+ report_worst_slack -max (Setup)
+============================================================================
+worst slack INF
+
+===========================================================================
+ report_worst_slack -min (Hold)
+============================================================================
+worst slack INF
+worst_slack_end
+clock_skew
+
+===========================================================================
+ report_clock_skew
+============================================================================
+Clock clkin
+No launch/capture paths found.
+
+clock_skew_end
+power_report
+
+===========================================================================
+ report_power
+============================================================================
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             3.54e-06   2.06e-06   5.91e-11   5.60e-06  58.5%
+Combinational          2.32e-06   1.65e-06   1.75e-10   3.97e-06  41.5%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  5.86e-06   3.71e-06   2.34e-10   9.57e-06 100.0%
+                          61.2%      38.8%       0.0%
+power_report_end
+area_report
+
+===========================================================================
+ report_design_area
+============================================================================
+Design area 315 u^2 24% utilization.
+area_report_end
+Setting global connections for newly added cells...
+Writing OpenROAD database to /openlane/designs/iiitb_gray_cntr/runs/RUN_2022.12.12_09.32.31/tmp/12-iiitb_gray_cntr.odb...
+Writing netlist to /openlane/designs/iiitb_gray_cntr/runs/RUN_2022.12.12_09.32.31/tmp/12-iiitb_gray_cntr.nl.v...
+Writing powered netlist to /openlane/designs/iiitb_gray_cntr/runs/RUN_2022.12.12_09.32.31/tmp/12-iiitb_gray_cntr.pnl.v...
+Writing layout to /openlane/designs/iiitb_gray_cntr/runs/RUN_2022.12.12_09.32.31/tmp/12-iiitb_gray_cntr.def...
+Writing timing constraints to /openlane/designs/iiitb_gray_cntr/runs/RUN_2022.12.12_09.32.31/tmp/12-iiitb_gray_cntr.sdc...

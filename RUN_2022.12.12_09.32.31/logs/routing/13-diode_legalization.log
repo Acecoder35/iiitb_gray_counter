@@ -1,0 +1,22 @@
+OpenROAD 7c85c140308f01b73f57ea1117f3e43f39abd437 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[WARNING STA-0163] /openlane/designs/iiitb_gray_cntr/src/sky130_fd_sc_hd__typical.lib line 23, default_fanout_load is 0.0.
+Placement Analysis
+---------------------------------
+total displacement          0.0 u
+average displacement        0.0 u
+max displacement            0.0 u
+original HPWL             525.1 u
+legalized HPWL            553.4 u
+delta HPWL                    5 %
+
+[INFO DPL-0020] Mirrored 12 instances
+[INFO DPL-0021] HPWL before             553.4 u
+[INFO DPL-0022] HPWL after              525.1 u
+[INFO DPL-0023] HPWL delta               -5.1 %
+Setting global connections for newly added cells...
+Writing OpenROAD database to /openlane/designs/iiitb_gray_cntr/runs/RUN_2022.12.12_09.32.31/tmp/routing/diode.odb...
+Writing netlist to /openlane/designs/iiitb_gray_cntr/runs/RUN_2022.12.12_09.32.31/tmp/routing/diode.nl.v...
+Writing powered netlist to /openlane/designs/iiitb_gray_cntr/runs/RUN_2022.12.12_09.32.31/tmp/routing/diode.pnl.v...
+Writing layout to /openlane/designs/iiitb_gray_cntr/runs/RUN_2022.12.12_09.32.31/tmp/routing/diode.def...
