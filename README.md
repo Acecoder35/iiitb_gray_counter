@@ -67,18 +67,11 @@ A gray counter changes 1-bit only during one state to another state transition. 
 
 This design code has clock and reset signals and two 4 bit outputs that will generate BCD count and its respective gray count. 
 
-<p align="center">
-<img src="http://www.sciweavers.org/tex2img.php?eq=fout%20%3D%20\frac{fin}{n}&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=">
-</p>
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/62461290/182013018-3f34c600-2481-42fb-b9fd-366531d73fbd.png"> <br>
-Fig 1: Frequency Divider
-</p>
+<img src="![Screenshot from 2022-12-19 04-08-53](https://user-images.githubusercontent.com/45118517/208323101-d8ad328d-7e3c-460c-8b7a-09d45429ba9a.png)"> <br>
+Fig 1: Basic I/O diagram
 
-<p align="center">
-<img src="https://user-images.githubusercontent.com/62461290/182013020-8a4a628e-071b-42b2-ba3a-034c2731935d.png"> <br>
-Fig 2: Basic I/O diagram
 </p>
 
 # Tools Used
