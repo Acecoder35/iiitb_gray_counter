@@ -69,10 +69,9 @@ This design code has clock and reset signals and two 4 bit outputs that will gen
 
 
 <p align="center">
-
+<img src="ttps://user-images.githubusercontent.com/45118517/208323221-1df3f8f9-65be-409e-a55b-5b3efcb972a9.png"> <br>
 <br>
 Fig 1: Basic I/O diagram
-![Screenshot from 2022-12-19 04-08-53](https://user-images.githubusercontent.com/45118517/208323221-1df3f8f9-65be-409e-a55b-5b3efcb972a9.png)
 
 </p>
 
