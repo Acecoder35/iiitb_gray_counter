@@ -55,22 +55,6 @@ This is a Gray Counter model which provides the gray count and the corresponding
 * [4. Flop/Standard cell ratio](https://github.com/DantuNandiniDevi/iiitb_freqdiv/blob/main/README.md#4-flopstandard-cell-ratio)<br>
 * [5. Power (internal,switching,leakage and total)](https://github.com/DantuNandiniDevi/iiitb_freqdiv/blob/main/README.md#5-power-internal-switching-leakage-and-total)<br>
 
-
-[Tapeout : Caravel Flow](https://github.com/DantuNandiniDevi/iiitb_freqdiv#tapeout--caravel-flow)<br>
-<br>
-
-[Errors and Solutions](https://github.com/DantuNandiniDevi/iiitb_freqdiv#errors-and-solutions)<br>
- * [Error 1 : make mount permission denied](https://github.com/DantuNandiniDevi/iiitb_freqdiv#error-1)<br>
- * [Error 2 : placement failed error](https://github.com/DantuNandiniDevi/iiitb_freqdiv#error-2)<br>
- * [Error 3 : Files name mismatch error](https://github.com/DantuNandiniDevi/iiitb_freqdiv#error-3)<br>
- * [Error 4 : No Macro Error](https://github.com/DantuNandiniDevi/iiitb_freqdiv#error-4)<br>
- * [Error 5 : sky130_vsdinv not reflecting in stat](https://github.com/DantuNandiniDevi/iiitb_freqdiv#error-5)<br>
- * [Error 6: List index out of range](https://github.com/DantuNandiniDevi/iiitb_freqdiv#error-6)<br>
- * [Error 7: Can't read sky130_vsdinv error in tcl window](https://github.com/DantuNandiniDevi/iiitb_freqdiv#error-7)<br>
- * [Error 8: PL_TARGET DENSITY error](https://github.com/DantuNandiniDevi/iiitb_freqdiv#error-8)<br>
- 
-
-
  
  [References](https://github.com/DantuNandiniDevi/iiitb_freqdiv#reference)<br>
  <br>
