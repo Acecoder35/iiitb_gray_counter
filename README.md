@@ -77,10 +77,11 @@ This is a Gray Counter model which provides the gray count and the corresponding
  
 # Description
 
-This document is a model and analysis of a Freqency Divider. This model will contain a 4 bit number lines to select by which factor does the input frequency has to be divided. It is simulated using verilog, synthesis is performed using yosys.
+This document is a model and analysis of a Gray counter. This model will contain a 4 bit number gray counter and its corresponding BCD count too. A reset can be triggered to start the gray counter from 0 again. It is simulated using verilog.
 
-A frequency divider takes an input frequency and generated a output frequency depending on the division factor. One of the well-known application of frequency divider is a phase lock loop, which generates multiples of a reference frequency. The other applications include frequency synthesizers, audio equipments, radar and satellite communication, Military equipments and RF devices. It is basically used in any application where frequency matching is needed and down scaling of frequency has to performed.
+A gray counter changes 1-bit only during one state to another state transition. The counter is same like the normal incremental counter. The only difference is in binary representation. Today gray code is widely used in the digital world. It will be helpful for error correction and signal transmission. The Gray counter is also useful in design and verification in the VLSI domain. Gray codes are widely used to prevent spurious output from electromechanical switches and to facilitate error correction in digital communications such as digital terrestrial television and some cable TV systems.
 
+This design code has clock and reset signals and two 4 bit outputs that will generate BCD count and its respective gray count. 
 
 <p align="center">
 <img src="http://www.sciweavers.org/tex2img.php?eq=fout%20%3D%20\frac{fin}{n}&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=">
