@@ -19,10 +19,8 @@ This is a Gray Counter model which provides the gray count and the corresponding
     - [installing OpenGL](https://github.com/DantuNandiniDevi/iiitb_freqdiv#installing-opengl)<br>
     - [installing tcl/tk](https://github.com/DantuNandiniDevi/iiitb_freqdiv#installing-tcltk)
     - [installing magic](https://github.com/DantuNandiniDevi/iiitb_freqdiv#installing-magic)<br>
- * [klayout installation](https://github.com/DantuNandiniDevi/iiitb_freqdiv#klayout-installation)<br>
  * [ngspice installation](https://github.com/DantuNandiniDevi/iiitb_freqdiv#ngspice-installation)<br>
- * [Tapeout : Caravel Flow Installation](https://github.com/DantuNandiniDevi/iiitb_freqdiv/blob/main/README.md#tapeout--caravel-flow-installation)
-
+ 
 [PreSynthesis](https://github.com/DantuNandiniDevi/iiitb_freqdiv#presynthesis)<br>
  <br>
 [PostSynthesis](https://github.com/DantuNandiniDevi/iiitb_freqdiv#postsynthesis)<br>
@@ -210,43 +208,12 @@ $ make
 $ make install
 ```
 
-## Klayout Installation
-
-```
-$ sudo apt-get install klayout
-```
 
 ## ngspice Installation
 
 ```
 $ sudo apt-get install ngspice
 ```
-
-## Tapeout : Caravel flow installation
-
-To start the project you first need to create a new repository based on the `caravel_user_project <https://github.com/efabless/caravel_user_project/>`_ template and make sure your repo is public and includes a README.
-
-   *   Follow https://github.com/efabless/caravel_user_project/generate to create a new repository.
-   *   Clone the reposity using the following command:
-   
-   
-	$ git clone <your github repo URL>
-
-    
-   To setup your local environment run:
-   
-    $ cd <project_name> # project_name is the name of your repo
-	
-    $ mkdir dependencies
-	
-	$ export OPENLANE_ROOT=$(pwd)/dependencies/openlane_src # you need to export this whenever you start a new shell
-	
-	$ export PDK_ROOT=$(pwd)/dependencies/pdks # you need to export this whenever you start a new shell
-
-	# export the PDK variant depending on your shuttle, if you don't know leave it to the default
-	$ export PDK=sky130B
-
-    $ make setup
    
 
 # PreSynthesis
@@ -254,19 +221,19 @@ To start the project you first need to create a new repository based on the `car
 To clone the repository, download the netlist files and simulate the results, Enter the following commands in your terminal:
 
 ```
- $ git clone https://github.com/DantuNandiniDevi/iiitb_freqdiv 
+ $ git clone https://github.com/Acecoder35/iiitb_gray_cntr
 
- $ cd iiitb_freqdiv 
+ $ cd iiitb_gray_cntr 
  
- $ iverilog -o iiitb_freqdiv_out.out iiitb_freqdiv.v iiitb_freqdiv_tb.v
+ $ iverilog -o iiitb_gray_cntr_out.out iiitb_gray_cntr.v iiitb_gray_cntr_tb.v
  
- $ ./iiitb_freqdiv_out.out
+ $ ./iiitb_gray_cntr_out.out
  
- $ gtkwave iiitb_freqdiv_vcd.vcd
+ $ gtkwave iiitb_gray_cntr_vcd.vcd
 ```
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/62461290/184837511-a29ecb45-d974-4053-8a1b-7f27b42759d0.png"> <br>
+<img src="/home/anvith/Pictures/Screenshot from 2022-12-19 04-41-37.png"> <br>
 </p>
 
 # PostSynthesis
