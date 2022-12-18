@@ -233,7 +233,7 @@ To clone the repository, download the netlist files and simulate the results, En
 ```
 
 <p align="center">
-<img src="/home/anvith/Pictures/Screenshot from 2022-12-19 04-41-37.png"> <br>
+<img src="https://user-images.githubusercontent.com/45118517/208324480-e162ddbb-a84d-4697-aa80-9f85c6068a4b.png"> <br>
 </p>
 
 # PostSynthesis
