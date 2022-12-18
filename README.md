@@ -269,8 +269,9 @@ $ gtkwave iiitb_gray_cntr_vcd.vcd
 
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/62461290/187424346-c798a1a0-3e8b-43c8-a14a-7fc75e51ef2a.png"> <br>
+<img src="https://user-images.githubusercontent.com/45118517/208325024-7e975040-d635-4e8e-864a-3c64aede566c.png"> <br>
 </p>
+
 
 
 
@@ -287,7 +288,8 @@ $  cp ./libs/sky130A.tech sky130A.tech
 
 $ magic -T sky130A.tech sky130_inv.mag &
 ```
-
+<p align="center">
+<img src="https://user-images.githubusercontent.com/62461290/187424346-c798a1a0-3e8b-43c8-a14a-7fc75e51ef2a.png"> 
 <br>
 
 The above layout will open. The design can be verified and various layers can be seen and examined by selecting the area of examination and type `what` in the tcl window.
