@@ -394,9 +394,9 @@ The layout is generated using OpenLane. To run a custom design on openlane, Navi
 ```
 $ cd designs
 
-$ mkdir iiitb_freqdiv
+$ mkdir iiitb_gray_cntr
 
-$ cd iiitb_freqdiv
+$ cd iiitb_gray_cntr
 
 $ mkdir src
 
@@ -404,16 +404,16 @@ $ touch config.json
 
 $ cd src
 
-$ touch iiitb_freqdiv.v
+$ touch iiitb_gray_cntr.v
 ```
 
-The iiitb_freqdiv.v file should contain the verilog RTL code you have used and got the post synthesis simulation for. <br>
+The iiitb_gray_cntr.v file should contain the verilog RTL code you have used and got the post synthesis simulation for. <br>
 
 Copy  `sky130_fd_sc_hd__fast.lib`, `sky130_fd_sc_hd__slow.lib`, `sky130_fd_sc_hd__typical.lib` and `sky130_vsdinv.lef` files to `src` folder in your design. <br>
 
 The final src folder should look like this: <br>
 
-![f2](https://user-images.githubusercontent.com/62461290/187058789-46914626-3965-41c8-8336-cff2ed949889.png) <br>
+![Screenshot from 2022-12-19 05-06-39](https://user-images.githubusercontent.com/45118517/208325435-5ebce6ad-8963-407b-ad56-115b6c72c9cb.png) <br>
 
 The contents of the config.json are as follows. this can be modified specifically for your design as and when required. <br>
 
