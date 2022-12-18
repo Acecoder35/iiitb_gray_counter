@@ -420,8 +420,8 @@ The contents of the config.json are as follows. this can be modified specificall
 As mentioned by kunal sir dont use defined `DIE_AREA` and `FP_SIZING : absolute`, use `FP_SIZING : relative`
 ```
 {
-    "DESIGN_NAME": "iiitb_freqdiv",
-    "VERILOG_FILES": "dir::src/iiitb_freqdiv.v",
+    "DESIGN_NAME": "iiitb_gray_cntr",
+    "VERILOG_FILES": "dir::src/iiitb_gray_cntr.v",
     "CLOCK_PORT": "clkin",
     "CLOCK_NET": "clkin",
     "GLB_RESIZER_TIMING_OPTIMIZATIONS": true,
@@ -452,22 +452,23 @@ Save all the changes made above and Navigate to the openlane folder in terminal 
 ```
 $ make mount (if this command doesnot go through prefix it with sudo)
 ```
-![1](https://user-images.githubusercontent.com/62461290/186196147-6c8d37a3-9769-428c-93e2-aefb4c897cf0.png)
+![Screenshot from 2022-12-19 05-11-04](https://user-images.githubusercontent.com/45118517/208325628-1c436aad-3949-4b94-b306-ba56c871198e.png)
 
 After entering the openlane container give the following command:<br>
 ```
 $ ./flow.tcl -interactive
 ```
-![2](https://user-images.githubusercontent.com/62461290/186196149-b595f203-a711-46cc-8949-39bee6de552e.png)
+ 
+![Screenshot from 2022-12-19 05-12-31](https://user-images.githubusercontent.com/45118517/208325668-5abf27cd-2f52-442e-b728-dc89c3d898b2.png)
 
 This command will take you into the tcl console. In the tcl console type the following commands:<br>
 
 ```
 % package require openlane 0.9
 ```
-![3](https://user-images.githubusercontent.com/62461290/186196154-c3caa53a-1199-45d1-8903-ba7a1f626c96.png)<br>
+![Screenshot from 2022-12-19 05-14-25](https://user-images.githubusercontent.com/45118517/208325756-a6f7aa0a-f3a2-4b61-9ec9-b4b408fbca88.png) <br>
 ```
-% prep -design iiitb_freqdiv
+% prep -design iiitb_gray_cntr
 ```
 ![4](https://user-images.githubusercontent.com/62461290/186196159-9444df4e-9580-4a04-ba68-c79190d78863.png)<br>
 
