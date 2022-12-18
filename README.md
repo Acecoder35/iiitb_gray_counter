@@ -470,18 +470,16 @@ This command will take you into the tcl console. In the tcl console type the fol
 ```
 % prep -design iiitb_gray_cntr
 ```
-![4](https://user-images.githubusercontent.com/62461290/186196159-9444df4e-9580-4a04-ba68-c79190d78863.png)<br>
+![Screenshot from 2022-12-19 05-16-36](https://user-images.githubusercontent.com/45118517/208325886-93a6af1a-9dd9-4bfd-9beb-853a9c286990.png) <br>
 
 The following commands are to merge external the lef files to the merged.nom.lef. In our case sky130_vsdiat is getting merged to the lef file <br>
 ```
 set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
 add_lefs -src $lefs
 ```
-![f1](https://user-images.githubusercontent.com/62461290/187058441-e4b64b62-d99d-49b6-8ea5-086afed01b75.png) <br>
 <br>
 The contents of the merged.nom.lef file should contain the Macro definition of sky130_vsdinv <br>
-<br>
-![f3](https://user-images.githubusercontent.com/62461290/187058907-0105481f-b632-4d0c-8d13-40a7f702a10d.png)
+
 
 ## Synthesis
 ```
