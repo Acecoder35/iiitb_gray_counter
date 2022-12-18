@@ -243,9 +243,9 @@ $ yosys
 
 yosys> read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 
-yosys> read_verilog iiitb_freqdiv.v
+yosys> read_verilog iiitb_gray_cntr.v
 
-yosys> synth -top iiitb_freqdiv
+yosys> synth -top iiitb_gray_cntr
 
 yosys> dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 
@@ -255,21 +255,24 @@ yosys> stat
 
 yosys> show
 
-yosys> write_verilog iiitb_freqdiv_netlist.v
+yosys> write_verilog iiitb_gray_cntr_netlist.v
 
-$ iverilog -DFUNCTIONAL -DUNIT_DELAY=#1 ../verilog_model/primitives.v ../verilog_model/sky130_fd_sc_hd.v iiitb_freqdiv_netlist.v iiitb_freqdiv_tb.v
+$ iverilog -DFUNCTIONAL -DUNIT_DELAY=#1 ../verilog_model/primitives.v ../verilog_model/sky130_fd_sc_hd.v iiitb_gray_cntr_netlist.v iiitb_gray_cntr_tb.v
 
 $ ./a.out
 
-$ gtkwave iiitb_freqdiv_vcd.vcd
+$ gtkwave iiitb_gray_cntr_vcd.vcd
 ```
 <p align="center">
-<img src="https://user-images.githubusercontent.com/62461290/184857873-012cef05-acf8-4170-b8e4-0f09a664c9ed.png"> <br>
+<img src="https://user-images.githubusercontent.com/45118517/208324829-075fb7a6-bdc5-458b-a541-9e5fe2bfd62b.png"> <br>
 </p>
 
+
 <p align="center">
-<img src="https://user-images.githubusercontent.com/62461290/184857905-2e755fa3-74ad-4a46-8683-94a24dfcb488.png"> <br>
+<img src="https://user-images.githubusercontent.com/62461290/187424346-c798a1a0-3e8b-43c8-a14a-7fc75e51ef2a.png"> <br>
 </p>
+
+
 
 # Creating a Custom Inverter Cell
 
@@ -285,7 +288,7 @@ $  cp ./libs/sky130A.tech sky130A.tech
 $ magic -T sky130A.tech sky130_inv.mag &
 ```
 
-![1](https://user-images.githubusercontent.com/62461290/187424346-c798a1a0-3e8b-43c8-a14a-7fc75e51ef2a.png)<br>
+<br>
 
 The above layout will open. The design can be verified and various layers can be seen and examined by selecting the area of examination and type `what` in the tcl window.
 
