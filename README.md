@@ -500,9 +500,9 @@ $ magic -T /home/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech iiitb_freqdi
 
 ### 1. Post Layout synthesis gate count
 
-![image](https://user-images.githubusercontent.com/62461290/192561109-5060bb00-2d5f-41c1-a6b1-f42803c02af1.png) <br>
+![Screenshot from 2022-12-19 05-35-04](https://user-images.githubusercontent.com/45118517/208326814-543c16b0-1f68-4874-9513-adb066c976f5.png) <br>
 
-<b><I> Gate Count = 71 </b></I> <br>
+<b><I> Gate Count = 25 </b></I> <br>
 
 ### 2. Area (box command)
 
