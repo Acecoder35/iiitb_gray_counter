@@ -1,59 +1,5 @@
  # iiitb_gray_counter - Gray Counter
 This is a Gray Counter model which provides the gray count and the corresponding BCD count.
-
-# Table of Contents
-
-[Description](https://github.com/DantuNandiniDevi/iiitb_freqdiv#description)<br>
-<br>
-[Tools Used](https://github.com/DantuNandiniDevi/iiitb_freqdiv#tools-used)<br>
-* [Icarus Verilog (iverilog) GTKWave installation](https://github.com/DantuNandiniDevi/iiitb_freqdiv#icarus-verilog-iverilog-gtkwave-installation)<br>
-* [Yosys installation](https://github.com/DantuNandiniDevi/iiitb_freqdiv#yosys-installation)<br>
-* [Python installation](https://github.com/DantuNandiniDevi/iiitb_freqdiv#python-installation)<br>
-* [Docker installation](https://github.com/DantuNandiniDevi/iiitb_freqdiv#docker-installation)<br>
-* [Openlane installation](https://github.com/DantuNandiniDevi/iiitb_freqdiv#openlane-installation)<br>
-* [Magic installation](https://github.com/DantuNandiniDevi/iiitb_freqdiv#magic-installation)<br>
-    - [installing csh](https://github.com/DantuNandiniDevi/iiitb_freqdiv#installing-csh)<br>
-    - [installing x11/xorg](https://github.com/DantuNandiniDevi/iiitb_freqdiv#installing-x11xorg)<br>
-    - [installing GCC](https://github.com/DantuNandiniDevi/iiitb_freqdiv#installing-gcc)<br>
-    - [installing Build Essentials](https://github.com/DantuNandiniDevi/iiitb_freqdiv#installing-build-essential)<br>
-    - [installing OpenGL](https://github.com/DantuNandiniDevi/iiitb_freqdiv#installing-opengl)<br>
-    - [installing tcl/tk](https://github.com/DantuNandiniDevi/iiitb_freqdiv#installing-tcltk)
-    - [installing magic](https://github.com/DantuNandiniDevi/iiitb_freqdiv#installing-magic)<br>
- * [ngspice installation](https://github.com/DantuNandiniDevi/iiitb_freqdiv#ngspice-installation)<br>
- 
-[PreSynthesis](https://github.com/DantuNandiniDevi/iiitb_freqdiv#presynthesis)<br>
- <br>
-[PostSynthesis](https://github.com/DantuNandiniDevi/iiitb_freqdiv#postsynthesis)<br>
- <br>
- 
- [Creating a Custom Cell](https://github.com/DantuNandiniDevi/iiitb_freqdiv/edit/main/README.md#creating-a-custom-inverter-cell)
- 
-[Layout](https://github.com/DantuNandiniDevi/iiitb_freqdiv#layout)<br>
- * [Preparation](https://github.com/DantuNandiniDevi/iiitb_freqdiv#preparation)<br>
- * [Synthesis](https://github.com/DantuNandiniDevi/iiitb_freqdiv#synthesis)<br>
-     - [Synthesis Reports](https://github.com/DantuNandiniDevi/iiitb_freqdiv#synthesis-reports)<br>
- * [Floorplan](https://github.com/DantuNandiniDevi/iiitb_freqdiv#floorplan)<br>
-     - [Floorplan Reports](https://github.com/DantuNandiniDevi/iiitb_freqdiv#floorplan-reports)<br>
- * [Placement](https://github.com/DantuNandiniDevi/iiitb_freqdiv#placement)<br>
-     - [placement Reports](https://github.com/DantuNandiniDevi/iiitb_freqdiv#placement-reports)<br>
- * [Clock Tree Synthesis](https://github.com/DantuNandiniDevi/iiitb_freqdiv#clock-tree-synthesis)<br>
- * [Routing](https://github.com/DantuNandiniDevi/iiitb_freqdiv#routing)<br>
-     - [Routing Reports](https://github.com/DantuNandiniDevi/iiitb_freqdiv#routing-reports)<br>
-
-
- [Note](https://github.com/DantuNandiniDevi/iiitb_freqdiv#note)<br>
- <br>
-
-[Results Post Layout](https://github.com/DantuNandiniDevi/iiitb_freqdiv/blob/main/README.md#results-post-layout) <br>
-* [1. Post layout synthesis gate count](https://github.com/DantuNandiniDevi/iiitb_freqdiv/blob/main/README.md#1-post-layout-synthesis-gate-count)<br>
-* [2. Area (box command)](https://github.com/DantuNandiniDevi/iiitb_freqdiv/blob/main/README.md#2-area-box-command)<br>
-* [3. Performance](https://github.com/DantuNandiniDevi/iiitb_freqdiv/blob/main/README.md#3-performance)<br>
-* [4. Flop/Standard cell ratio](https://github.com/DantuNandiniDevi/iiitb_freqdiv/blob/main/README.md#4-flopstandard-cell-ratio)<br>
-* [5. Power (internal,switching,leakage and total)](https://github.com/DantuNandiniDevi/iiitb_freqdiv/blob/main/README.md#5-power-internal-switching-leakage-and-total)<br>
-
- 
- [References](https://github.com/DantuNandiniDevi/iiitb_freqdiv#reference)<br>
- <br>
  
 # Description
 
