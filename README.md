@@ -41,8 +41,6 @@ This is a Gray Counter model which provides the gray count and the corresponding
      - [Routing Reports](https://github.com/DantuNandiniDevi/iiitb_freqdiv#routing-reports)<br>
 
 
- [Viewing layout in klayout](https://github.com/DantuNandiniDevi/iiitb_freqdiv#viewing-layout-in-klayout)<br>
- <br>
  [Note](https://github.com/DantuNandiniDevi/iiitb_freqdiv#note)<br>
  <br>
 
@@ -489,20 +487,14 @@ We can run the whole flow at once instead of step by step process by giving the 
 ```
 $ ./flow.tcl -design iiitb_gray_cntr
 ```
-![100](https://user-images.githubusercontent.com/62461290/186196145-6850e928-d54a-404d-ad30-1fdb124a883b.png)<br>
-<br>
+
 All the steps will be automated and all the files will be generated.<br>
 
-we can open the mag file and view the layout after the whole process by the following command, you can follow the path as per the image.<br>
+we can open the mag file and view the layout after the whole process by the following command, you can follow the path. <br>
 
 ```
-$ magic -T /home/nandu/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech iiitb_freqdiv.mag &
+$ magic -T /home/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech iiitb_freqdiv.mag &
 ```
-<br>
-
-![30](https://user-images.githubusercontent.com/62461290/186206184-3f146947-84d9-4178-9dd2-c54330067168.png)<br>
-![31](https://user-images.githubusercontent.com/62461290/186206194-4ea81f2f-ab7f-4d34-840d-7aabff547774.png)<br>
-![32](https://user-images.githubusercontent.com/62461290/186206196-526af125-b092-4bfc-9025-33dad27a3e6e.png)<br>
 
 # Results post-layout
 
