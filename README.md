@@ -503,12 +503,14 @@ $ magic -T /home/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech iiitb_freqdi
 ![Screenshot from 2022-12-19 05-35-04](https://user-images.githubusercontent.com/45118517/208326814-543c16b0-1f68-4874-9513-adb066c976f5.png) <br>
 
 <b><I> Gate Count = 25 </b></I> <br>
+<b><I> As seen from above report, Flop ratio = 7/25 = 0.28 </b></I> <br>
 
 ### 2. Area (box command)
 
-![image](https://user-images.githubusercontent.com/62461290/192560025-fbbdb1ea-5964-48fe-81a5-bbf15ee119af.png) <br>
+ ![Screenshot from 2022-12-19 05-35-40](https://user-images.githubusercontent.com/45118517/208326947-1baa1315-a796-4075-af58-8428188f3de8.png) <br>
 
-<b><I> Area = 5397.065 um2</b></I> <br>
+
+<b><I> Area = 2933.573 um2</b></I> <br>
 
 
 ### 3. Performance
