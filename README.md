@@ -518,21 +518,21 @@ $ magic -T /home/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech iiitb_freqdi
 ```
 $ sta <br>
 
-OpenSTA> read_liberty -max /home/nandu/OpenLane/designs/iiitb_freqdiv/src/sky130_fd_sc_hd__fast.lib <br>
+OpenSTA> read_liberty -max /home/OpenLane/designs/iiitb_gray_cntr/src/sky130_fd_sc_hd__fast.lib
 
-OpenSTA> read_liberty -min /home/nandu/OpenLane/designs/iiitb_freqdiv/src/sky130_fd_sc_hd__slow.lib <br>
+OpenSTA> read_liberty -min /home/OpenLane/designs/iiitb_gray_cntr/src/sky130_fd_sc_hd__slow.lib
 
-OpenSTA> read_verilog /home/nandu/OpenLane/designs/iiitb_freqdiv/runs/RUN_2022.09.27_14.17.25/results/routing/iiitb_freqdiv.resized.v <br>
+OpenSTA> read_verilog /home/OpenLane/designs/iiitb_gray_cntr/runs/RUN_2022.12.12_09.32.31/results/routing/iiitb_iiitb_gray_cntr.resized.v
 
-OpenSTA> link_design iiitb_freqdiv <br>
+OpenSTA> link_design iiitb_freqdiv
 
-OpenSTA> read_sdc /home/nandu/OpenLane/designs/iiitb_freqdiv/runs/RUN_2022.09.27_14.17.25/results/cts/iiitb_freqdiv.sdc <br>
+OpenSTA> read_sdc /home/OpenLane/designs/iiitb_iiitb_gray_cntr/runs/RUN_2022.12.12_09.32.31/results/cts/iiitb_iiitb_gray_cntr.sdc
 
-OpenSTA> read_spef /home/nandu/OpenLane/designs/iiitb_freqdiv/runs/RUN_2022.09.27_14.17.25/results/routing/iiitb_freqdiv.nom.spef <br>
+OpenSTA> read_spef /home/OpenLane/designs/iiitb_iiitb_gray_cntr/runs/RUN_2022.12.12_09.32.31/results/routing/iiitb_iiitb_gray_cntr.nom.spef
 
-OpenSTA> set_propagated_clock [all_clocks] <br>
+OpenSTA> set_propagated_clock [all_clocks]
 
-OpenSTA> report_checks <br>
+OpenSTA> report_checks
 ```
 
 ![image](https://user-images.githubusercontent.com/62461290/192555217-b263a4e2-cad6-44e3-8682-bb0b70840aa5.png)<br>
