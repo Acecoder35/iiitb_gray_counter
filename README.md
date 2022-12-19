@@ -495,6 +495,14 @@ we can open the mag file and view the layout after the whole process by the foll
 ```
 $ magic -T /home/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech iiitb_freqdiv.mag &
 ```
+# Reports
+
+ ## Floorplan Reports
+ ### Die Area
+ ![Screenshot from 2022-12-19 06-02-15](https://user-images.githubusercontent.com/45118517/208327766-7903143e-f6c9-4b7c-9441-3c2701f4eae3.png) <br>
+
+ ### Core Area
+ ![Screenshot from 2022-12-19 06-03-23](https://user-images.githubusercontent.com/45118517/208327817-364153aa-70ef-4d17-ad14-bef9143bff70.png) <br>
 
 # Results post-layout
 
@@ -503,7 +511,6 @@ $ magic -T /home/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech iiitb_freqdi
 ![Screenshot from 2022-12-19 05-35-04](https://user-images.githubusercontent.com/45118517/208326814-543c16b0-1f68-4874-9513-adb066c976f5.png) <br>
 
 <b><I> Gate Count = 25 </b></I> <br>
-<b><I> As seen from above report, Flop ratio = 7/25 = 0.28 </b></I> <br>
 
 ### 2. Area (box command)
 
@@ -534,38 +541,26 @@ OpenSTA> set_propagated_clock [all_clocks]
 
 OpenSTA> report_checks
 ```
+![Screenshot from 2022-12-19 05-53-23](https://user-images.githubusercontent.com/45118517/208327382-3b45f3a4-5438-46c1-8246-e6cdf79969df.png) <br>
 
-![image](https://user-images.githubusercontent.com/62461290/192555217-b263a4e2-cad6-44e3-8682-bb0b70840aa5.png)<br>
-
-![image](https://user-images.githubusercontent.com/62461290/192554957-5c3adff3-850e-4f62-b842-7279bf1ebd6d.png)<br>
-
-<b><I> Performance = 1/(clock period - slack) = 1/(10 - 1.70)ns = 120.482Mhz </b></I><br>
+<b><I> Performance = 1/(clock period - slack) = 1/(10-7.29)ns = 369MHz </b></I><br>
 
 ### 4. Flop/standard cell ratio
 
-![image](https://user-images.githubusercontent.com/62461290/192561408-44f38899-38d3-4b34-89f5-1b25cb59a143.png) <br>
+![Screenshot from 2022-12-19 05-35-04](https://user-images.githubusercontent.com/45118517/208326814-543c16b0-1f68-4874-9513-adb066c976f5.png) <br>
 
 
-<b><I>Flop Ratio = Ratio of total number of flip flops / Total number of cells present in the design = 8/71 = 0.1125 </b></I><br>
+<b><I>Flop Ratio = Ratio of total number of flip flops / Total number of cells present in the design = 7/25 = 0.28 < </b></I><br>
 
 ### 5. Power (internal, switching, leakage and total)
 
-![image](https://user-images.githubusercontent.com/62461290/192557539-51cbc494-67f6-4a8f-9b39-cd5da92613b5.png) <br>
-
-<b><I> Internal Power = 97.9 uW (74.4%) </b></I><br>
-<b><I> Switching Power = 33.7 uW (25.6%) </b></I><br>
-<b><I> Leakage Power = 0.459 nW (0.00%) </b></I><br>
-<b><I> Total Power = 132 uW (100%) </b></I><br>
+![Screenshot from 2022-12-19 05-56-37](https://user-images.githubusercontent.com/45118517/208327526-29f391b3-6be2-4476-b1d3-46ff45aeede7.png) <br>
 
 
-
-# Reference
-
-- http://pgandhi189.blogspot.com/2014/11/universal-frequency-dividor.html ,Verilog code and testbench was taken from here
-
-- https://en.wikipedia.org/wiki/Frequencydivider 
-
-- https://eng.libretexts.org/Bookshelves/ElectricalEngineering/Electronics/Microwave and RF Design IV%3A Modules (Steer)/06%3A Mixer and Source Modules/6.08%3A Frequency Divider,some content and fig.1. was taken from here..
+<b><I> Internal Power = 5.86 uW (61.2%)  </b></I><br>
+<b><I> Switching Power = 3.71 uW (38.8%)  </b></I><br>
+<b><I> Leakage Power = 0.234 nW (0.00%)  </b></I><br>
+<b><I> Total Power = 9.57uW (100%)  </b></I><br>
 
 # Author
-- Dantu Nandini Devi
+- Sai Anvith Vattikuti - IMT2018528
