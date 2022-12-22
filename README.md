@@ -475,13 +475,13 @@ OpenSTA> read_liberty -max /home/OpenLane/designs/iiitb_gray_cntr/src/sky130_fd_
 
 OpenSTA> read_liberty -min /home/OpenLane/designs/iiitb_gray_cntr/src/sky130_fd_sc_hd__slow.lib
 
-OpenSTA> read_verilog /home/OpenLane/designs/iiitb_gray_cntr/runs/RUN_2022.12.12_09.32.31/results/routing/iiitb_iiitb_gray_cntr.resized.v
+OpenSTA> read_verilog /home/OpenLane/designs/iiitb_gray_cntr/runs/RUN_2022.12.12_09.32.31/results/routing/iiitb_gray_cntr.resized.v
 
-OpenSTA> link_design iiitb_freqdiv
+OpenSTA> link_design iiitb_gray_cntr
 
-OpenSTA> read_sdc /home/OpenLane/designs/iiitb_iiitb_gray_cntr/runs/RUN_2022.12.12_09.32.31/results/cts/iiitb_iiitb_gray_cntr.sdc
+OpenSTA> read_sdc /home/OpenLane/designs/iiitb_iiitb_gray_cntr/runs/RUN_2022.12.12_09.32.31/results/cts/iiitb_gray_cntr.sdc
 
-OpenSTA> read_spef /home/OpenLane/designs/iiitb_iiitb_gray_cntr/runs/RUN_2022.12.12_09.32.31/results/routing/iiitb_iiitb_gray_cntr.nom.spef
+OpenSTA> read_spef /home/OpenLane/designs/iiitb_iiitb_gray_cntr/runs/RUN_2022.12.12_09.32.31/results/routing/iiitb_gray_cntr.nom.spef
 
 OpenSTA> set_propagated_clock [all_clocks]
 
